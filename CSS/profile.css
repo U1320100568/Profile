@@ -1,0 +1,220 @@
+:root{
+	--dis-name-h:440px;
+}
+
+.name-section{
+	width:100%;
+	/*background-color: var(--p-green);*/
+	background-image: linear-gradient(165deg,var(--p-green) ,#66babb, #8cffef) ;
+	position:absolute;
+	left:0;
+	top:var(--dis-l);
+	z-index:-1;
+	padding-left: calc( 33.33333% + var(--dis-2l) );
+	line-height:normal;
+	box-sizing: border-box;
+}
+
+.name-section .title{
+	font-size:var(--font-3l);
+	color:var(--p-green-dark);
+	margin-top:calc(var(--dis-name-h)   / 2);
+	margin-left: -3px;
+	display:inline-block;
+
+}
+.name-section .title.english{
+	font-size: 4em;
+	padding-left: var(--dis-2l);
+}
+.name-section .subtitle{
+	font-size:var(--font-xl);
+	color:var(--p-green-dark2);
+	margin: auto 0;
+	line-height:normal;
+	margin-top:var(--dis-2l);
+}
+.middle-section::after{
+	/*float parent fit height*/
+	content:"";
+	display:table;
+	clear: both;
+}
+.middle-section .left-section{
+	padding-top:var(--dis-l);
+}
+.middle-section .right-section{
+	margin-top: calc(var(--dis-name-h) + var(--dis-l))
+}
+.middle-section>.right-section .title::before{
+	content:"";
+	width: calc(var(--font-m) * 0.5);
+	height: calc(var(--font-m) * 0.5);
+	margin:calc(var(--font-m) * 0.25) 2px;
+	background-color: var(--p-green-dark);
+	border-radius: 30px;
+	position:absolute;
+	left: calc(-1 * (var(--dis-2l)*0.5 + var(--font-l)*0.25));
+	top :calc(-1 * var(--dis-s)*0.5);
+}
+.left-section{
+	background-color: var(--p-green-dark);
+	float:left;
+	width:calc(33.33333% - var(--dis-l));
+	margin-left:var(--dis-l);
+	height:100%;
+}
+.left-section .subtitle{
+	font-size: var(--font-l);
+	color:var(--p-grey);
+}
+.left-section .item{
+	font-size:var(--font-m);
+	color:var(--p-green-light);
+	line-height: var(--font-l);
+	overflow: auto;
+}
+.right-section{
+	float:right;
+	width:66.66666%;
+	height:100%;
+}
+.right-section .container{
+	margin:0;
+	padding: 0;
+	background-color: transparent; 
+	margin-left:calc(var(--dis-2l) / 2);
+	padding-left: calc(var(--dis-2l) / 2);
+}
+.middle-section >.right-section .container{
+	border-left: solid 2px ;
+	border-image: linear-gradient(to bottom ,transparent, var(--p-green-dark) ,transparent) 1 100%;
+}
+
+
+.right-section .title{
+	font-size: var(--font-xl);
+	color:var(--p-black);
+	display:inline-block;
+	font-weight: bolder;
+	position:relative;
+}
+.right-section .time{
+	font-size: var(--font-s);
+	margin-left:5px;
+	display: inline-block;
+}
+.right-section .subtitle{
+	font-size:var(--font-l);
+	color:var(--p-green2);
+	font-style: italic;
+}
+.right-section .content{
+	float: none;
+	font-size: var(--font-m);
+	color: var(--p-black);
+	height:unset;
+	line-height: var(--font-l);
+}
+.pic-section{
+	height:var(--dis-name-h);
+	display:flex;/*置中*/
+}
+.pic-wrap{
+	width: 60%;
+	border-radius: 300px;
+	overflow: hidden;
+	margin: auto ;
+	padding-bottom: 60%;	/*搭配position讓長方形變成正方形*/
+	position: relative;
+}
+.pic-wrap img{
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.caption{
+	font-size: var(--font-2l);
+	color: var(--p-green);
+	line-height: normal;
+}
+.caption::first-letter{
+	font-size: var(--font-l);
+}
+
+.program-left {
+	float:left;
+}
+.program-right {
+	float:right;
+}
+.program-left .item{
+	text-align: right;
+}
+.program-right .item{
+	text-align: left;
+	padding-left: var(--dis-s);
+
+}	
+.dot{
+	display: inline-block;
+	float: left;
+	width: calc(var(--font-l) * 0.5);
+	height: calc(var(--font-l) * 0.5);
+	margin:calc(var(--font-l) * 0.25) 2px;
+	background-color: var(--p-green-light);
+	border-radius: 30px;
+}
+.dot-half{
+	display: inline-block;
+	float: left;
+	width: calc(var(--font-l) * 0.25);
+	height: calc(var(--font-l) * 0.5);
+	margin:calc(var(--font-l) * 0.25) 2px;
+	background-color: var(--p-green-light);
+	border-radius: 30px 0 0 30px;
+}
+.intro-section{
+	height:var(--dis-name-h) ;
+	background-color: var(--p-green-light);
+}
+.bottom-section{
+	/*width:100%;*/
+}
+.flexbox{
+	display: flex;/*將兩邊的block一樣高度*/
+	flex-flow: column nowrap;
+}
+.block{
+	flex:4;
+}
+.block-s{
+	flex:1;
+}
+.block img{
+	max-width: 80%;
+	max-height: 100%;
+
+}
+.block img.reflect{
+	height:90px;
+	width:100%;
+	transform: scaleY(-1);
+	-webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0),  rgba(0,0,0,.7));
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,0) , rgba(0,0,0,0.7));
+}
+
+.h-1{
+	height:var(--dis-name-h);
+}
+.h-3{
+	height:calc(var(--dis-name-h) * 3);
+}
+.el-center-v{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*父層要有height*/
+}
