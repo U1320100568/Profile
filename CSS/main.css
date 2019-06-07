@@ -48,7 +48,7 @@ a{
 	color: var(--white);
 }
 a:hover{
-	font-size: var(--font-m);
+	/*font-size: var(--font-m);*/
 	color:var(--light-red);
 	transition:  0.3s linear;
 }
@@ -284,6 +284,7 @@ button:focus, input:focus{
 	/*line-height: 18px;*/
 	padding:3px 8px;
 	border-radius: 15px;
+	white-space: nowrap;
 }
 .category{
 	height: 100vh;

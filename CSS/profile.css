@@ -5,7 +5,9 @@
 .name-section{
 	width:100%;
 	/*background-color: var(--p-green);*/
-	background-image: linear-gradient(165deg,var(--p-green) ,#66babb, #8cffef) ;
+	/*background-image: linear-gradient(165deg,var(--p-green) ,#66babb, #8cffef) ;*/
+	background:url(../Images/background3.JPG) center;
+	background-size:cover;
 	position:absolute;
 	left:0;
 	top:var(--dis-l);
@@ -30,7 +32,7 @@
 .name-section .subtitle{
 	font-size:var(--font-xl);
 	color:var(--p-green-dark2);
-	margin: auto 0;
+	margin: auto 0 auto 3px;
 	line-height:normal;
 	margin-top:var(--dis-2l);
 }
@@ -176,12 +178,43 @@
 	background-color: var(--p-green-light);
 	border-radius: 30px 0 0 30px;
 }
+.contact{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.contact a.btn{
+	font-size: var(--font-m);
+	color: var(--p-green-light);
+	border: solid 1.5px var(--p-green-light);
+	padding:var(--dis-s) var(--dis-m);
+
+}
+.contact a.btn:hover{
+	font-size: var(--font-m);
+	color: var(--p-green);
+	border: solid 1.5px var(--p-green);
+
+}
+
+
 .intro-section{
 	height:var(--dis-name-h) ;
-	background-color: var(--p-green-light);
+	background: url(../Images/background4.JPG) center;
+	background-size: cover;
+}
+.intro-section .content{
+	color:var(--white);
 }
 .bottom-section{
 	/*width:100%;*/
+}
+.bottom-section a>span.announce-tag{
+	background-color: var(--soft-green);
+}
+.bottom-section a:hover>span.announce-tag{
+	background-color: var(--p-green);
 }
 .flexbox{
 	display: flex;/*將兩邊的block一樣高度*/
@@ -205,7 +238,6 @@
 	-webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0),  rgba(0,0,0,.7));
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,0) , rgba(0,0,0,0.7));
 }
-
 .h-1{
 	height:var(--dis-name-h);
 }
