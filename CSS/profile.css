@@ -223,10 +223,10 @@
 .bottom-section{
 	/*width:100%;*/
 }
-.bottom-section a>span.announce-tag{
+.bottom-section a>span.tag{
 	background-color: var(--soft-green);
 }
-.bottom-section a:hover>span.announce-tag{
+.bottom-section a:hover>span.tag{
 	background-color: var(--p-green);
 }
 .flexbox{
