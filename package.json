@@ -1,7 +1,7 @@
 {
   "name": "profile",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is Roy's web cv",
   "main": "View/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/U1320100568/U1320100568.github.io#readme",
   "dependencies": {
-    "animate.css": "^3.7.2"
+    "wowjs": "^1.1.3"
   }
 }

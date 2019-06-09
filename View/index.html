@@ -4,17 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Roy Profile</title>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC:500,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/animate.css" >
 	<link rel="stylesheet" href="../CSS/reset.css" >
 	<link rel="stylesheet" href="../CSS/main.css" >
 	<link rel="stylesheet" href="../CSS/profile.css" >
 	<link rel="shortcut icon" href="../Images/icon.ico">
+	<script src="../node_modules/wowjs/dist/wow.min.js"></script>
 </head>
 <body>
 		<div class=" name-section h-1 ">
 			<div class=" parallax-back h-1 back-1"></div>
 			<div class="left-section">
 				<div class="pic-section">
-					<div class="pic-wrap ">
+					<div class="pic-wrap wow rubberBand">
 						<img src="../Images/U1320100568.jpg" alt="找不到圖片">
 					</div> 
 				</div>
@@ -76,10 +78,10 @@
 				</ul>
 				<div class="caption mb-s ">CONTACT</div>
 				<ul class="mb-m">
-					<li class="item">0988 878929</li>
-					<li class="item">roy200230034004@gmail.com</li>
+					<li class="item wow heartBeat">0988 878929</li>
+					<li class="item wow heartBeat">roy200230034004@gmail.com</li>
 				</ul>
-				<div class="contact mb-l">
+				<div class="contact mb-l wow wobble">
 					<a href="https://s3-ap-northeast-1.amazonaws.com/yourator/users/resumes/000/052/474/original/2660cd5cb47ade795f862b92aad55d2e7b74fa7d.pdf?1555848560" class="btn font2">下載pdf版履歷</a>
 				</div>
 				
@@ -87,25 +89,31 @@
 			<div class="right-section">
 				<div class="container">
 					<div class="caption mb-s">EXPERIENCE</div>
-					<div class="title mb-m">卓越動力, 專案工程師</div><div class="time">Feb 2018 ~ Now</div>
-					<div class="subtitle font2 mb-s font-letter-space">共通性資料檢核系統</div>
-					<ul class="content font2 mb-l font-letter-space">
+					<div class="wow slideInDown">
+						<div class="title mb-m">卓越動力, 專案工程師</div><div class="time">Feb 2018 ~ Now</div>
+					</div>
+					<div class="subtitle font2 mb-s font-letter-space wow flipInX">共通性資料檢核系統</div>
+					<ul class="content font2 mb-l font-letter-space wow flipInX">
 						<li>主要擔任此專案的前端及後端工程師等工作</li>
 						<li>使用RESTful API 架構開發大部分功能</li>
 						<li>針對客戶客製化上百條語法，檢查不同面向的資料</li>
 						<li>講授撰寫條件語法的課程</li>
 					</ul>
-					<div class="title mb-m">國立暨南大學資訊工程碩士</div><div class="time">Sep 2014 ~ Aug 2016</div>
-					<div class="subtitle font2 mb-s font-letter-space">美洲豹演算法結合自適應初始步伐 解方程式最佳化問題</div>
-					<ul class="content font2 mb-l font-letter-space">
+					<div class="wow slideInDown">
+						<div class="title mb-m">國立暨南大學資訊工程碩士</div><div class="time">Sep 2014 ~ Aug 2016</div>
+					</div>
+					<div class="subtitle font2 mb-s font-letter-space wow flipInX">美洲豹演算法結合自適應初始步伐 解方程式最佳化問題</div>
+					<ul class="content font2 mb-l font-letter-space wow flipInX">
 						<li>結合知名演化計算的優點(基因、粒子群優…)，</li>
 						<li>以C++實作在方程式數學模型的實驗，</li>
 						<li>設計出快速且效果較好的演算法，</li>
 						<li>收錄於2015年IEEE SMC國際會議</li>
 					</ul>
-					<div class="title mb-m">國立暨南大學資訊工程學士</div><div class="time">Sep 2010 ~ Jun 2014</div>
-					<div class="subtitle font2 mb-s font-letter-space">電子傳單GreenFlyer </div>
-					<ul class="content font2 mb-l font-letter-space">
+					<div class="wow slideInDown">
+						<div class="title mb-m">國立暨南大學資訊工程學士</div><div class="time">Sep 2010 ~ Jun 2014</div>
+					</div>
+					<div class="subtitle font2 mb-s font-letter-space wow flipInX">電子傳單GreenFlyer </div>
+					<ul class="content font2 mb-l font-letter-space wow flipInX">
 						<li>開發於Android作業系統製作手機應用程式，</li>
 						<li>搭配網頁端服務，讓使用者可以在不同平台使用，</li>
 						<li>在此專題負責手機端程式、資料庫設計、及需求流程設計，</li>
@@ -142,8 +150,8 @@
 					<div class="caption">PROJECT</div> 
 				</div>
 				<div class="block el-center">
-					<img src="../Images/project1.jpg" alt="找不到圖片">
-					<img src="../Images/project1.jpg" class="reflect" >
+					<img src="../Images/project1.jpg" alt="找不到圖片" >
+					<img src="../Images/project1.jpg" class="reflect " >
 				</div>
 				<div class="block el-center">
 					<img src="../Images/project2.jpg" alt="找不到圖片">
@@ -160,9 +168,9 @@
 						<div class="caption" style="visibility: hidden">PROJECT</div>
 					</div>
 					<div class="block">
-						<div class="title mb-m">共通性資料檢核系統</div>
-						<div class="subtitle mb-s font-letter-space">HTML, CSS, Vue.js, jQuery, ASP.NET MVC, MSSQL</div>
-						<div class="content font2 mb-l font-letter-space description">可隨心所欲的定義上傳檔案的格式
+						<div class="title mb-m wow flipInX">共通性資料檢核系統</div>
+						<div class="subtitle mb-s font-letter-space wow flipInX">HTML, CSS, Vue.js, jQuery, ASP.NET MVC, MSSQL</div>
+						<div class="content font2 mb-l font-letter-space description wow flipInX">可隨心所欲的定義上傳檔案的格式
 							打造大量偵錯語法，自由選擇於檢核資料的正確面向
 							系統會員分成多種層級，各大功能分成多種操作權限
 							擴充資料管理功能，使用者可將資料彈性化的處理(如併檔、分檔)
@@ -170,19 +178,19 @@
 						</div>
 					</div>
 					<div class="block">
-						<div class="title mb-m">美洲豹演算法結合自適應初始步伐
+						<div class="title mb-m  wow flipInX">美洲豹演算法結合自適應初始步伐
 							解方程式最佳化問題</div>
-						<div class="subtitle mb-s font-letter-space">C++</div>
-						<div class="content font2 mb-l font-letter-space">美洲豹演算法是演化計算，也就是人工智慧演算法的其中之一，
+						<div class="subtitle mb-s font-letter-space  wow flipInX">C++</div>
+						<div class="content font2 mb-l font-letter-space  wow flipInX">美洲豹演算法是演化計算，也就是人工智慧演算法的其中之一，
 							可以使用此類演算法來找出許多最佳化問題的最佳解答，包含許多NP-complete問題(例如旅行銷售員問題)，甚至到現實中很多工程最佳化問題，而美洲豹演算法就是經由集結各大知名演算法的優點，提升找到解答的品質和效率，作在基礎的方程式問題呈現美洲豹演算法的結果，並且優於各大知名演算法得到不錯的結果。
 
 							<a href="https://ieeexplore.ieee.org/document/7379414" target="_blank"><span class="tag b-green">收錄於國際會議SMC</span></a>
 						</div>
 					</div>
 					<div class="block">
-						<div class="title mb-m">電子傳單 GreenFlyer</div>
-						<div class="subtitle mb-s font-letter-space">HTML,CSS, PHP, JAVA(Android), MySQL</div>
-						<div class="content font2 mb-l font-letter-space">系統是針對現代展場中的許多不方便而且浪費的缺點，利用手持裝置加以改善，
+						<div class="title mb-m wow flipInX">電子傳單 GreenFlyer</div>
+						<div class="subtitle mb-s font-letter-space  wow flipInX">HTML,CSS, PHP, JAVA(Android), MySQL</div>
+						<div class="content font2 mb-l font-letter-space  wow flipInX">系統是針對現代展場中的許多不方便而且浪費的缺點，利用手持裝置加以改善，
 							消費者不必在大量的傳單和資訊中手忙腳亂，廠商也可以快速更新資訊，
 							節省成本回饋消費者，這項軟體在國內外的比賽獲得不錯的肯定。
 							

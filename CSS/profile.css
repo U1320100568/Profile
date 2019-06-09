@@ -2,23 +2,7 @@
 	--dis-name-h:440px;
 }
 
-.parallax-back{
-	width:100%;
-	position: absolute;
-	top:0;
-	left: 0;
-	background-position: right;
-	background-size:cover;
-	z-index: -1;
-	background-attachment: fixed;/*固定用來pallax*/
 
-}
-.parallax-back.back-1{
-	background-image:url(../Images/background3.jpg) ;
-}
-.parallax-back.back-2{
-	background-image:url(../Images/background4.jpg) ;
-}
 .name-section{
 	width:100%;
 	line-height:normal;
@@ -262,4 +246,27 @@
 	align-items: center;
 	justify-content: center;
 	/*父層要有height*/
+}
+
+/*special*/
+.parallax-back{
+	width:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-position: right;
+	background-size:cover;
+	z-index: -1;
+	background-attachment: fixed;/*固定用來pallax*/
+	transform: translateZ(0);
+}
+.parallax-back.back-1{
+	background-image:url(../Images/background3.jpg) ;
+}
+.parallax-back.back-2{
+	background-image:url(../Images/background4.jpg) ;
+}
+
+.wow {
+	visibility: hidden;
 }
