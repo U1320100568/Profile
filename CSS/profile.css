@@ -6,7 +6,7 @@
 	width:100%;
 	/*background-color: var(--p-green);*/
 	/*background-image: linear-gradient(165deg,var(--p-green) ,#66babb, #8cffef) ;*/
-	background:url(../Images/background3.JPG) center;
+	background:url(../Images/background3.jpg) center;
 	background-size:cover;
 	position:absolute;
 	left:0;
@@ -201,7 +201,7 @@
 
 .intro-section{
 	height:var(--dis-name-h) ;
-	background: url(../Images/background4.JPG) center;
+	background: url(../Images/background4.jpg) center;
 	background-size: cover;
 }
 .intro-section .content{
